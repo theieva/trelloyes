@@ -23,7 +23,6 @@ class App extends Component {
             <List 
             key={list.id}
             header={list.header} 
-            {/* Map through each list's cardIds array. Return the cards whose ids match from the allCards list */}
             cards={list.cardIds.map(id => store.allCards[id])} />
           )
         })}
